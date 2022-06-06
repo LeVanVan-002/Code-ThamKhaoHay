@@ -1,0 +1,91 @@
+.nova-news {
+    margin-top: 3.5rem;
+}
+
+.nova-news__banner {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.nova-news__content {
+    padding: 0 7%;
+}
+
+.nova-news__content__title {
+    border-bottom: 3px solid #3d8507;
+    padding-bottom: 7px;
+    color: #4d4d4d;
+    display: inline-block;
+}
+
+.nova-news__content__post {
+    padding: 2rem 0;
+    border-bottom: 2px solid #808080;
+    margin: 0;
+}
+
+.nova-news__content__post__img {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.nova-news__content__post__detail {
+    margin-left: -15px;
+}
+
+.nova-news__content__post__detail small {    
+    color: #0086db;
+    font-size: .7rem;
+}
+
+.nova-news__content__post__info {
+    font-size: .65rem;
+}
+
+.nova-news__content__post__link {
+    color: #4d4d4d;
+}
+
+.nova-news__content__post__link:hover {
+    color: #4d4d4d;
+    text-decoration: none;
+    opacity: .7;
+    transition: .5s;
+}
+
+.rightmenu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.rightmenu ul li {
+    font-size: .7rem;
+    list-style: none;
+    border-top: 1px dotted #b3b3b3;
+}
+
+.rightmenu ul li a {
+    color: #333;
+    padding: 7px 0 7px 7px;
+}
+
+.rightmenu ul li a:before {
+    content: '|';
+    background: #b3b3b3;
+    width: 3px;
+    color: #b3b3b3;
+    margin-right: 10px;
+}
+
+.rightmenu ul li a:hover {
+    color: #53b50a;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.rightmenu ul li:hover a:before {
+    background: #53b50a;
+    color: #53b50a;
+    text-decoration: none;
+    transition: all .5s;
+}

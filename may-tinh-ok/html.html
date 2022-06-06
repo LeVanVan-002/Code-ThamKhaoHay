@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css.css">
+</head>
+<body>
+    <body onkeydown="globalKey(event)">
+        <main class="container">
+          <header class="panels">
+            <div class="secondPanel"></div>
+            <div class="mainPanel">0</div>
+          </header>
+          <div class="buttons-grid">
+            <div onclick="clearPanels()" class="special">C</div>
+            <div onclick="operators('Mod')" class="special">Mod.</div>
+            <div onclick="changeSign()" class="special">+/-</div>
+            <div onclick="specialSolver('fact')" class="special">x!</div>
+            <div onclick="specialSolver('1/')" class="special">1/x</div>
+            <div onclick="specialSolver('√')" class="special"><sup class="root">2</sup>&radic;x</div>
+            <div onclick="specialSolver('sqr')" class="special">x<sup class="pow">2</sup></div>
+            <div onclick="operators('+')" class="sum classic">&plus;</div>
+            <div onclick="operators('-')" class="subtract classic">&minus;</div>
+            <div onclick="operators('\u00D7')" class="multiply classic">&times;</div>
+            <div onclick="operators('\u00F7')" class="divide classic">&divide;</div>
+            <div onclick="result()" class="result">=</div>
+            <div onclick="global(this)" class="numNine">9</div>
+            <div onclick="global(this)" class="numEight">8</div>
+            <div onclick="global(this)" class="numSeven">7</div>
+            <div onclick="global(this)" class="numSix">6</div>
+            <div onclick="global(this)" class="numFive">5</div>
+            <div onclick="global(this)" class="numFour">4</div>
+            <div onclick="global(this)" class="numThree">3</div>
+            <div onclick="global(this)" class="numTwo">2</div>
+            <div onclick="global(this)" class="numOne">1</div>
+            <div onclick="dotChecker()" class="dot special">.</div>
+            <div onclick="global(this)" class="numZero">0</div>
+            <div onclick="delElement()" class="del special">&lArr;</div>
+          </div>
+        </main>
+        <script src="script.js"></script>
+      </body>
+    <script src="/js.js"></script>
+</body>
+</html>

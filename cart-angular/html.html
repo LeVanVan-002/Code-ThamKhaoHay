@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css.css">
+    <script src="./js/angular-1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp">
+        <h2>Shopping Cart </h2>
+        <div ng-controller="CartForm" class="mycontainer">
+          <table class="table">
+            <tr>
+              <th>Sự miêu tả</th>
+              <th>Số lượng</th>
+              <th>Trị giá</th>
+              <th>Chiết khấu (%)</th>
+              <th>Toàn bộ</th>
+              <th>Di dời</th>
+              <th>Bao gồm?</th>
+            </tr>
+            <tr ng-repeat="item in invoice.items">
+              <td><input type="text" ng-model="item.description" class="input-small" placeholder="items name"></td>
+              <td><input type="number" ng-model="item.qty" ng-required class="input-mini"></td>
+              <td><input type="number" ng-model="item.cost" ng-required class="input-mini" ></td>
+              <td><input type="number" ng-model="item.discount" ng-required class="input-mini"></td>
+              <!--   <td>{{item.tax}}%</td>      -->
+              <td>{{(item.qty * item.cost) * (1 - item.discount/100) | currency}}</td>
+              <td>
+                <a href ng-click="removeItem($index)">Xóa<span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+              </td>
+              <td><input type="checkbox" ng-model="item.checked"></td>
+            </tr>
+            <tr>
+              <td><a class="btn btn-info btn-sm btn-block" href ng-click="addItem()">add new item</a></td>
+              <td colspan="6"></td>
+            </tr>
+            <tr class="row-total">
+              <td colspan="4"></td>
+              <td>Toàn bộ:</td>
+              <td>{{total() | currency}}</td>
+            </tr>
+          </table>
+        </div>
+        <div class="author">Made with ♥ by <a href="" target="_blank">lê văn</a></div>
+      </div>
+      <script src="/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="./angular.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body ng-app="myApp" ng-controller="viewCtrl">
+      <div class="container">
+          <div class="row" >
+              <div class="col-sm-6 offset-sm-3" >
+                  <form>
+                      <div class="form-group">
+                          <label >Name</label>
+                          <input ng-model="student.name" class="form-control" type="text" name="">
+                      </div>
+                      <div class="form-group">
+                        <label >BirtDay</label>
+                        <input class="form-control" ng-model="student.birthday" type="text" name="">
+                    </div>
+                    <div class="form-group">
+                        <label >Điểm</label>
+                        <input ng-model="student.mark" class="form-control" type="text" name="">
+                    </div>
+
+                   <button ng-click="save()" type="button" class="btn btn-primary">save</button>
+                   <button ng-click="clear()" type="button" class="btn btn-primary">reset</button>
+                  </form>
+              </div>
+          </div>
+          <hr>
+          <div class="row">
+              <div class="col-sm-6 offset-sm-3">
+                 <table class="table table-bordered">
+                     <tbody>
+                         <tr>
+                             <td>Name</td>
+                             <td>BirtDay</td>
+                             <td>mark</td>
+                             <td>Action</td>
+                         </tr>
+                         <tr ng-repeat="st in list_student">
+                            <td>{{st.name}}</td>
+                            <td>{{st.birthday}}</td>
+                            <td>{{st.mark}}</td>
+                            <td>edit</td>
+                        </tr>
+                     </tbody>
+                 </table>
+              </div>
+          </div>
+      </div>
+
+      <script>
+          var app = angular.module('myApp',[]);
+          app.controller('viewCtrl', function ($scope){
+           $scope.student = {};
+           ///tạo func lưu cái student vào trong list 
+           $scope.save = function(){
+              $scope.list_student.push(angular.copy($scope.student));
+           };
+           $scope.clear = function(){
+            $scope.student = {};
+         };
+           $scope.list_student = [
+                 {
+                     name: "TeoNV 1",
+                     birthday: "20/09/2002",
+                     mark : 9
+                 },
+                 {
+                    name: "TeoNV 2",
+                    birthday: "20/09/2002",
+                    mark : 9
+                },
+                {
+                    name: "TeoNV 3",
+                    birthday: "20/09/2002",
+                    mark : 9
+                }, {
+                    name: "TeoNV 4 ",
+                    birthday: "20/09/2002",
+                    mark : 9
+                } ,{
+                    name: "TeoNV 5 ",
+                    birthday: "20/09/2002",
+                    mark : 9
+                }
+           ]
+          });
+      </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

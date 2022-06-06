@@ -1,0 +1,57 @@
+.form-info.container-fluid {
+    padding: 0 7%;
+}
+
+.form-info .form-info__title {
+    border-bottom: 3px solid #0067a8;
+    padding-bottom: 7px;
+    font-size: .7rem;
+    display: inline-block;
+}
+
+.form-info input,
+.form-info select,
+.form-info textarea {
+    font-size: .7rem;
+    border-radius: 0;
+    padding: .5rem .7rem;
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0 0 10px rgba(0,0,0,.2);
+    -ms-box-shadow: inset 0 0 10px rgba(0,0,0,.2);
+    box-shadow: inset 0 0 10px rgba(0,0,0,.2);
+}
+
+.form-info input:focus,
+.form-info select:focus,
+.form-info textarea:focus {
+    border-color: #ced4da;
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, .2);
+    -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, .2);
+    -ms-box-shadow: inset 0 0 10px rgba(0, 0, 0, .2);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.form-info .btn {
+    font-size: .7rem;
+    border-radius: .125rem;
+}
+
+.form-info .capcha__btn {
+    font-size: .6rem;
+}
+
+.form-info .btn-success {
+    background-color: #53b50a;
+}
+
+.form-info .btn-success:hover {
+    background-color: #3d8507;
+}
+
+.form-info .btn-light {
+    background-color: #eee;
+}
+
+.form-info .btn-light:hover {
+    background-color: #ddd;
+}

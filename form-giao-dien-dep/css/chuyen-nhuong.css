@@ -1,0 +1,183 @@
+/* Begin Product Transfer*/
+#transfer-content{
+	padding:0 7%;
+	margin-top:5rem;
+	margin-bottom:1.5rem;
+}
+#transfer-content .slider__search-field select,#transfer-content .slider__search-field input{
+		border:1px solid #b3b3b3;
+		height:2.2rem;
+		padding:0 0.3rem;
+	}
+.transfer-choose-nav{
+	background-color:#fafafa;
+}
+.transfer-choose-nav-seclect{
+	width:90%;
+}
+.transfer-choose-nav-seclect select{
+	width:80%;
+	padding:0.3rem 0.2rem;
+	margin: 0.5rem 0;
+	background-color:#e8e8e8;
+	border:1px solid #e8e8e8;
+	border-radius:5px;
+}
+.transfer-choose-nav .btn--red{
+	padding:1.2rem 1.2rem;
+	font-size:1rem;
+}
+.product-display-type a{
+	color:black;
+}
+.product-display-type .active,.product-display-type a:hover{
+	color:#53b50a;
+}
+#product-count{
+	width:3rem;
+}
+.product-pagination .pagination .page-link{
+	font-size:0.6rem;
+	color:black;
+}
+.product-pagination .pagination .page-item.active .page-link{
+	background-color:#ef562b;
+	color:white;
+	border-color:#ef562b;
+}
+@media screen and (max-width:1200px ){
+	.transfer-choose-nav-seclect select{
+		width:90%;
+	}
+}
+@media screen and (max-width:992px ){
+	#transfer-content{
+		padding:0 5%;
+	}
+	.transfer-choose-nav{
+		flex-wrap: wrap;
+	}
+	.transfer-choose-nav-seclect{
+		width: 100%
+	}
+	.transfer-choose-nav-seclect select{
+		width:100%;
+	}
+	.transfer-choose-nav .btn--red{
+		width:100%;
+		padding: 0.5rem 0;
+		font-size:0.8rem;
+		margin-bottom:0.5rem;
+	}
+}
+@media screen and (max-width:768px ){
+	#transfer-content{
+		padding:0 5%;
+	}
+	.transfer-choose-nav{
+		flex-wrap: wrap;
+	}
+	.transfer-choose-nav-seclect{
+		width: 100%
+	}
+	.transfer-choose-nav-seclect select{
+		width:100%;
+	}
+	.transfer-choose-nav .btn--red{
+		width:100%;
+		padding: 0.5rem 0;
+		font-size:0.8rem;
+		margin-bottom:0.5rem;
+	}
+}
+@media screen and (min-width:1200px) and (max-width:1320px){
+	#transfer-content{
+		padding:0 3%;
+	}
+}
+@media screen and (max-width:576px ){
+	#transfer-content{
+		padding:0 5%;
+	}
+	.transfer-choose-nav{
+		flex-wrap: wrap;
+	}
+	.transfer-choose-nav-seclect{
+		width: 100%
+	}
+	.transfer-choose-nav-seclect select{
+		width:100%;
+	}
+	.transfer-choose-nav .btn--red{
+		width:100%;
+		padding: 0.5rem 0;
+		font-size:0.8rem;
+		margin-bottom:0.5rem;
+	}
+}
+/* End Product Transfer*/
+
+/* Product view list */
+	.form-contact-list{
+		background-color:#f7f7f7;
+		margin-top:2rem;
+	}
+	.form-contact-list h1{
+		font-size:0.9rem;
+		border-bottom:1px dotted #b0b0b0
+	}
+	.form-contact-list__phone{
+		font-size:1.4rem;
+		color:#53b50a;
+		border-bottom:1px dotted #b0b0b0
+	}
+	.form-contact-list__mail{
+		font-size:0.7rem;
+		color:#53b50a;
+		border-bottom:1px dotted #b0b0b0
+	}
+	.form-contact-list input,.form-contact-list textarea{
+		font-size:0.68rem;
+		margin-bottom:0.5rem;
+	}
+	@media screen and (min-width:1200px) and (max-width:1320px){
+		.form-contact-list__phone{
+			font-size:1rem;
+		}
+		.form-contact-list__mail{
+			font-size:0.6rem;
+		}
+	}
+<<<<<<< HEAD
+/* End Product view list */
+=======
+/* End Product view list */
+
+/* Start Product Transfer*/
+
+#transfer-form{
+	padding:2rem 7%;
+	background-color:#ededed;
+}
+#transfer-form .contact-detail h1{
+	font-size:0.9rem;
+}
+#transfer-form .contact-detail p{
+	font-size:0.68rem;
+}
+#transfer-form .contact-detail p span{
+	font-size:1rem;
+}
+#transfer-form .contact-form h1{
+	font-size:0.9rem;
+}
+#transfer-form .contact-form input{
+	height:1.8rem;
+	margin-bottom:0.3rem;
+}
+#transfer-form .contact-form textarea{
+	height:6rem;
+	margin-bottom:0.3rem;
+}
+/* End Product Transfer*/
+>>>>>>> 9cd88a822bb34a100d4b4fc3cb909639c8f723f3

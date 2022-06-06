@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tính Lương thưởng </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="./angular.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body ng-app="myApp">
+      <div class="container" ng-controller="myCtrl">
+          <div class="row" style="margin-top:50px ;">
+              <div class="col-sm-8 offset-sm-2">
+                  <div class="card">
+                      <div class="card-header">
+                          Tính Thưởng tết nguyên đán 
+                      </div>
+                      <div class="card-body">
+                         <form name="frmBonus">
+                             <div class="form-group">
+                                 <label >Họ Và Tên</label>
+                                 <!-- minlength="11" nhập tên phải trên 10 ký tự -->
+                                 <input  class="form-control" ng-model="name" required type="text" minlength="11" name="txtFullname">
+                                 <!-- $invalid thông báo lỗi -->
+                                 <label ng-show="frmBonus.txtFullname.$invalid" class="alert alert-danger">Bạn chưa nhập họ và tên </label>
+                             </div>
+                             <div class="form-group">
+                                <label>Lương</label>
+                                <!-- min="2000000" lương trên 2tr -->
+                                <input  class="form-control" ng-model="salary" required min="20000000" type="number" ty name="txtSalary">
+                                <label ng-show="frmBonus.txtSalary.$invalid" class="alert alert-danger">Lương của bạn phải lớn hơn 2,000,000</label>
+                            </div>
+                            <div class="form-group">
+                                <label>Giới Tính</label> </br>
+                                <div class="form-check form-check-inline">
+                                    <input ng-model="gender" value="Nam" class="form-check-input" type="radio" name="gender" checked>
+                                    <label class="form-check-label" for="gender">Nam</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input ng-model="gender" value="Nữ" class="form-check-input" type="radio" name="gender" >
+                                    <label class="form-check-label" for="gender">Nữ</label>
+                                  </div>
+                            </div>
+                             <div class="form-group">
+                                 <label for="">Độ Tuổi</label>
+                                 <!--  khai báo model age để đổ dữ liệu vào -->
+                                 <select ng-model="age" class=" form-control" ng-options="x.age for x in list_age">
+                                    
+                                 </select>
+                             </div>
+                           
+                         </form>
+                      </div>
+                      <div class="card-footer">
+                          tiền thưởng : {{getBonus() | number}} VNĐ
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <script>
+          var app = angular.module('myApp',[]);
+          app.controller('myCtrl',function($scope){
+              //khai báo 1 cái list tuổi từu 25 - 40
+             $scope.list_age = [
+                {
+                    age: "dưới 25",
+                    rate: 0.07
+                },
+                {
+                    age: "từ 25 đến 40",
+                    rate: 0.1
+                },
+                {
+                    age: "trên 40",
+                    rate: 0.15
+                },
+             ];
+             $scope.salary = 0 ;
+             $scope.gender = "Nam";
+             //gán vị trí tuổi mặc định cho nó
+             $scope.age = $scope.list_age[1];
+             $scope.getBonus= function (){
+                 var bonus = $scope.age.rate * $scope.salary;
+                 //nếu là nữ thì cộng thêm 200
+                 if ($scope.gender=="Nữ"){
+                     bonus += 200000;
+                 }
+                 return bonus;
+             }
+          });
+      </script>
+      <!-- -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

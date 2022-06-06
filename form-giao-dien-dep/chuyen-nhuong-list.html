@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chuyển nhượng - Sàn giao dịch địa ốc Novaland Agent</title>
+    <link rel="shortcut icon" href="img/icons/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" href="css/trang-chu-chuyen-nhuong.css">
+    <link rel="stylesheet" href="css/chuyen-nhuong.css">
+</head>
+<body>
+    <!--BEGIN HEADER-->
+    <header id="header" class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark  header__navbar">
+            <a href="#" class="header__navbar__logo">
+                <img src="img/icons/logo.png" class="img-fluid">
+            </a>
+             <div class="transfer-detail transfer-detail-md mr-auto d-none d-md-block d-lg-none">
+                        <img src="img/icons/hotline.png">
+                        <span>Chuyển nhượng: </span>
+                        <a href="#" class="ml-1">
+                            0997 79 79 79
+                        </a>
+            </div>
+            <button class="navbar-toggler ml-auto mr-3" id="button-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+    
+            <div class="navbar-collapse" id="header-menu">
+                <ul class="navbar-nav align-items-center navbar-nav--left">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Chuyển Nhượng</a>
+                          <div class="nav-line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Thuê</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown">
+                            Ghi nhận yêu cầu
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu animated fadeInUp">
+                            <a href="#" class="dropdown-item">Cần chuyển nhượng</a>
+                            <a href="#" class="dropdown-item">Cần thuê</a>
+                            <a href="#" class="dropdown-item">Cần cho thuê</a>
+                            <a href="#" class="dropdown-item">Cần mua</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown">
+                            Tính toán chi phí
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu animated fadeInUp">
+                            <a href="#" class="dropdown-item">So sánh mua & thuê</a>
+                            <a href="#" class="dropdown-item">Tính lãi vay</a>
+                        </div>
+                    </li>
+                    <li class="nav-item transfer-detail mr-auto d-md-none d-xl-block">
+                        <img src="img/icons/hotline.png">
+                        <span>Chuyển nhượng: </span>
+                        <a href="#" class="ml-1">
+                            0997 79 79 79
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-nav--right ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Tin tức</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown">
+                            Tuyển dụng
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu animated fadeInUp">
+                            <a href="#" class="dropdown-item">Chính sách nhân sự</a>
+                            <a href="#" class="dropdown-item">Cơ hội nghề nghiệp</a>
+                            <a href="#" class="dropdown-item">Hoạt động cộng đồng</a>
+    
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--END HEADER-->
+    <!--START TRANSFER CONTENT-->
+   <section id="transfer-content">
+       <div class="container-fluid">
+           <div class="row">
+                <!--Col-1-->
+               <div class="col-lg-8 col-xl-6">
+                   <div class="slider__search-field d-flex w-100 justify-content-center mb-1">
+                        <select class="form-control border-right d-none d-md-block">
+                            <option value="">Chuyển nhượng</option>
+                            <option value="">Thuê</option>
+                        </select>
+                        <div class="input-group">
+                            <input type="text" name="" placeholder="Nhập từ khóa để tìm kiếm" class="form-control">
+                            <div class="input-group-append">
+                            <button class="btn btn--green">Tìm kiếm</button>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+                <!--Col-2-->
+                <div class="col-md-12 my-3">
+                    <div class="transfer-choose-nav border rounded py-2 px-3 d-flex align-items-center justify-content-between">
+                        <div class="transfer-choose-nav-seclect">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 col-lg-3 text-center text-lg-left text-xl-center">
+                                    <select class="fs-1">
+                                        <option value="">Tỉnh/Thành</option>
+                                        <option value="" >Hồ Chí Minh</option>
+                                        <option value="" >Hà Nội</option>
+                                        <option value="" >Kon Tum</option>
+                                        <option value="" >Đà Lạt</option>
+                                    </select>
+                                </div>
+                               <div class="col-sm-6 col-md-4 col-lg-3 text-center text-lg-left text-xl-center">
+                                    <select class="fs-1">
+                                        <option value="">Quận/Huyện</option>
+                                        <option value="" >Hồ Chí Minh</option>
+                                        <option value="" >Hà Nội</option>
+                                        <option value="" >Kon Tum</option>
+                                        <option value="" >Đà Lạt</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3 text-center text-lg-left text-xl-center">
+                                    <select class="fs-1">
+                                        <option value="">Mức giá</option>
+                                        <option value="" >Hồ Chí Minh</option>
+                                        <option value="" >Hà Nội</option>
+                                        <option value="" >Kon Tum</option>
+                                        <option value="" >Đà Lạt</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3 text-center text-lg-left text-xl-center">
+                                    <select class="fs-1">
+                                        <option value="">Dự án</option>
+                                        <option value="" >Hồ Chí Minh</option>
+                                        <option value="" >Hà Nội</option>
+                                        <option value="" >Kon Tum</option>
+                                        <option value="" >Đà Lạt</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3 text-center text-lg-left text-xl-center">
+                                    <select class="fs-1">
+                                        <option value="">Số phòng ngủ</option>
+                                        <option value="" >Hồ Chí Minh</option>
+                                        <option value="" >Hà Nội</option>
+                                        <option value="" >Kon Tum</option>
+                                        <option value="" >Đà Lạt</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3 text-center text-lg-left text-xl-center">
+                                    <select class="fs-1">
+                                        <option value="">Diện tích</option>
+                                        <option value="" >Hồ Chí Minh</option>
+                                        <option value="" >Hà Nội</option>
+                                        <option value="" >Kon Tum</option>
+                                        <option value="" >Đà Lạt</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3 text-center text-lg-left text-xl-center">
+                                    <select class="fs-1">
+                                        <option value="">Hướng cửa Chính</option>
+                                        <option value="" >Hồ Chí Minh</option>
+                                        <option value="" >Hà Nội</option>
+                                        <option value="" >Kon Tum</option>
+                                        <option value="" >Đà Lạt</option>
+
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-md-4 col-lg-3 text-center text-lg-left text-xl-center">
+                                    <select class="fs-1">
+                                        <option value="">Hướng cửa sổ</option>
+                                        <option value="" >Hồ Chí Minh</option>
+                                        <option value="" >Hà Nội</option>
+                                        <option value="" >Kon Tum</option>
+                                        <option value="" >Đà Lạt</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn--red">Lọc</button>
+                    </div>
+                </div>
+                <!--Col-3-->
+                <div class="col-xl-9 animated wow fadeInLeft">
+                    <!--Product large screen-->
+                    <div class="d-none d-md-block">
+                            <div class="d-flex justify-content-between">
+                                <div class="product-display-type">
+                                    <a href="#" class="fs-1 mr-2 ">
+                                        <i class="fa fa-picture-o"></i>
+                                        Ảnh đại diện
+                                    </a>
+                                    <a href="#" class="fs-1 active">
+                                        <i class="fa fa-list-ul"></i>
+                                        Danh sách
+                                    </a>
+                                </div>
+                                <select id="product-count" name="select-count" class="fs-1 ml-auto rounded">
+                                    <option value="">9</option>
+                                    <option value="">12</option>
+                                    <option value="">15</option>
+                                </select>    
+                            </div>
+                            <div class="product-item-list d-flex py-3 border-top border-bottom product-item-list-item-active mt-2">
+                                <a href="#" class="d-block">
+                                    <img src="img/gallery/lexingtonresidence_044.jpg" alt="" class="img-fluid" >
+                                </a>
+                                <div class="product-item-list-title ml-4 mt-2 h-100">
+                                    <h1>Căn hộ - GALAXY 9</h1>
+                                    <p class="product-text">Mã: A22012B1205a</p>
+                                </div>
+                                <div class="product-item-list-price ml-auto text-center">
+                                    <h2 class="fw-bold">1 TỶ 900 TRIỆU</h2>
+                                    <img src="img/icons/logo-galaxy-9.jpg" alt="" ><br>
+                                    <a href="#" class="btn btn--red mt-3">Xem thêm</a>
+                                </div>
+                            </div>  
+                            <div class="product-item-list d-flex py-3 border-top border-bottom">
+                                    <a href="" class="d-block">
+                                        <img src="img/gallery/lexingtonresidence_044.jpg" alt="" class="img-fluid" >
+                                    </a>
+                                <div class="product-item-list-title ml-4 mt-2 h-100">
+                                    <h1>Căn hộ - GALAXY 9</h1>
+                                     <ul class="list-unstyled">
+                                        <li>
+                                            <span>Vị trí: Quận 4, TP Hồ Chí Minh</span>
+                                         </li>
+                                        <li>
+                                             <span>Loại hình: Căn hộ cao cấp</span>
+                                        </li>
+                                        <li>
+                                            <span>Số phòng ngủ: 1</span>
+                                        </li>
+                                        <li>
+                                            <span>Diện tích: 48,8 m<sup>2</sup></span>
+                                        </li>
+                                        <li>
+                                            <span>Mã: A107051205a</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-item-list-price ml-auto text-center">
+                                    <h2 class="fw-bold">1 TỶ 900 TRIỆU</h2>
+                                    <img src="img/icons/logo-galaxy-9.jpg" alt="" ><br>
+                                    <a href="#" class="btn btn--grey mt-2">Xem thêm</a>
+                                </div>
+                            </div>
+                             <div class="product-item-list d-flex py-3 border-top border-bottom">
+                                <a href="#" class="d-block">
+                                    <img src="img/gallery/lexingtonresidence_044.jpg" alt="" class="img-fluid" >
+                                </a>
+                                <div class="product-item-list-title ml-4 mt-2 h-100">
+                                    <h1>Căn hộ - GALAXY 9</h1>
+                                     <ul class="list-unstyled">
+                                        <li>
+                                            <span>Vị trí: Quận 4, TP Hồ Chí Minh</span>
+                                         </li>
+                                        <li>
+                                             <span>Loại hình: Căn hộ cao cấp</span>
+                                        </li>
+                                        <li>
+                                            <span>Số phòng ngủ: 1</span>
+                                        </li>
+                                        <li>
+                                            <span>Diện tích: 48,8 m<sup>2</sup></span>
+                                        </li>
+                                        <li>
+                                            <span>Mã: A107051205a</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-item-list-price ml-auto text-center">
+                                    <h2 class="fw-bold">1 TỶ 900 TRIỆU</h2>
+                                    <img src="img/icons/logo-galaxy-9.jpg" alt="" ><br>
+                                    <a href="#" class="btn btn--grey mt-2">Xem thêm</a>
+                                </div>
+                            </div>
+                             <div class="product-item-list d-flex py-3 border-top border-bottom">
+                                <a href="#" class="d-block">
+                                    <img src="img/gallery/lexingtonresidence_044.jpg" alt="" class="img-fluid" >
+                                </a>
+                                <div class="product-item-list-title ml-4 mt-2 h-100">
+                                    <h1>Căn hộ - GALAXY 9</h1>
+                                     <ul class="list-unstyled">
+                                        <li>
+                                            <span>Vị trí: Quận 4, TP Hồ Chí Minh</span>
+                                         </li>
+                                        <li>
+                                             <span>Loại hình: Căn hộ cao cấp</span>
+                                        </li>
+                                        <li>
+                                            <span>Số phòng ngủ: 1</span>
+                                        </li>
+                                        <li>
+                                            <span>Diện tích: 48,8 m<sup>2</sup></span>
+                                        </li>
+                                        <li>
+                                            <span>Mã: A107051205a</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-item-list-price ml-auto text-center">
+                                    <h2 class="fw-bold">1 TỶ 900 TRIỆU</h2>
+                                    <img src="img/icons/logo-galaxy-9.jpg" alt="" ><br>
+                                    <a href="#" class="btn btn--grey mt-2">Xem thêm</a>
+                                </div>
+                            </div>
+                             <div class="product-item-list d-flex py-3 border-top border-bottom">
+                                <a href="#" class="d-block">
+                                    <img src="img/gallery/lexingtonresidence_044.jpg" alt="" class="img-fluid" >
+                                </a>
+                                <div class="product-item-list-title ml-4 mt-2 h-100">
+                                    <h1>Căn hộ - GALAXY 9</h1>
+                                     <ul class="list-unstyled">
+                                        <li>
+                                            <span>Vị trí: Quận 4, TP Hồ Chí Minh</span>
+                                         </li>
+                                        <li>
+                                             <span>Loại hình: Căn hộ cao cấp</span>
+                                        </li>
+                                        <li>
+                                            <span>Số phòng ngủ: 1</span>
+                                        </li>
+                                        <li>
+                                            <span>Diện tích: 48,8 m<sup>2</sup></span>
+                                        </li>
+                                        <li>
+                                            <span>Mã: A107051205a</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-item-list-price ml-auto text-center">
+                                    <h2 class="fw-bold">1 TỶ 900 TRIỆU</h2>
+                                    <img src="img/icons/logo-galaxy-9.jpg" alt="" ><br>
+                                    <a href="#" class="btn btn--grey mt-2">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div> 
+                        <!--Product sm screen-->
+                        <div class="row d-flex d-md-none mx-0">
+                            <div class="col-sm-6 col-lg-4">
+                            <div class="product__item border-0">
+                                <div class="product__item__header product__item__header-galaxy py-1 text-center rounded-top">
+                                    <a href="#" class="fw-bold text-white">Căn hộ - GALAXY 9</a>
+                                </div>
+                                    <a href="#"><img src="img/gallery/galaxy9_044.jpg" class="img-fluid"></a>
+
+                                <div class="px-3 border border-top-0 rounded-bottom py-3">
+                                    <h2 class=" fw-bold">1 TỶ 650 TRIỆU</h2>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <span>Vị trí: Quận 4, TP Hồ Chí Minh</span>
+                                        </li>
+                                        <li>
+                                            <span>Loại hình: Căn hộ cao cấp</span>
+                                        </li>
+                                        <li>
+                                            <span>Số phòng ngủ: 1</span>
+                                        </li>
+                                        <li>
+                                            <span>Diện tích: 48,8 m<sup>2</sup></span>
+                                        </li>
+                                        <li>
+                                            <span>Mã: A107051205a</span>
+                                        </li>
+                                    </ul>
+                                    <a class="btn btn--red">Xem Thêm <i class="fa fa-angle-right ml-1"></i></a>
+                                </div>
+                                <img src="img/icons/logo-galaxy-9.jpg" class="product__item__logo img-fluid d-sm-none d-md-block">
+                                
+                            </div>
+                        </div>
+                        <!--PRODUCT-->
+                       <div class="col-sm-6 col-lg-4">
+                            <div class="product__item border-0">
+                                <div class="product__item__header product__item__header-galaxy py-1 text-center rounded-top">
+                                    <a href="#" class="fw-bold text-white">Căn hộ - GALAXY 9</a>
+                                </div>
+                                    <a href="#"><img src="img/gallery/galaxy9_044.jpg" class="img-fluid"></a>
+
+                                <div class="px-3 border border-top-0 rounded-bottom py-3">
+                                    <h2 class=" fw-bold">1 TỶ 650 TRIỆU</h2>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <span>Vị trí: Quận 4, TP Hồ Chí Minh</span>
+                                        </li>
+                                        <li>
+                                            <span>Loại hình: Căn hộ cao cấp</span>
+                                        </li>
+                                        <li>
+                                            <span>Số phòng ngủ: 1</span>
+                                        </li>
+                                        <li>
+                                            <span>Diện tích: 48,8 m<sup>2</sup></span>
+                                        </li>
+                                        <li>
+                                            <span>Mã: A107051205a</span>
+                                        </li>
+                                    </ul>
+                                    <a class="btn btn--red">Xem Thêm <i class="fa fa-angle-right ml-1"></i></a>
+                                </div>
+                                <img src="img/icons/logo-galaxy-9.jpg" class="product__item__logo img-fluid d-sm-none d-md-block">
+                                
+                            </div>
+                        </div>
+                        <!--PRODUCT-->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="product__item border-0">
+                                <div class="product__item__header product__item__header-galaxy py-1 text-center rounded-top">
+                                    <a href="#" class="fw-bold text-white">Căn hộ - GALAXY 9</a>
+                                </div>
+                                    <a href="#"><img src="img/gallery/galaxy9_044.jpg" class="img-fluid"></a>
+
+                                <div class="px-3 border border-top-0 rounded-bottom py-3">
+                                    <h2 class=" fw-bold">1 TỶ 650 TRIỆU</h2>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <span>Vị trí: Quận 4, TP Hồ Chí Minh</span>
+                                        </li>
+                                        <li>
+                                            <span>Loại hình: Căn hộ cao cấp</span>
+                                        </li>
+                                        <li>
+                                            <span>Số phòng ngủ: 1</span>
+                                        </li>
+                                        <li>
+                                            <span>Diện tích: 48,8 m<sup>2</sup></span>
+                                        </li>
+                                        <li>
+                                            <span>Mã: A107051205a</span>
+                                        </li>
+                                    </ul>
+                                    <a class="btn btn--red">Xem Thêm <i class="fa fa-angle-right ml-1"></i></a>
+                                </div>
+                                <img src="img/icons/logo-galaxy-9.jpg" class="product__item__logo img-fluid d-sm-none d-md-block">
+                                
+                            </div>
+                        </div>
+                        <!--PRODUCT-->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="product__item border-0">
+                                <div class="product__item__header product__item__header-galaxy py-1 text-center rounded-top">
+                                    <a href="#" class="fw-bold text-white">Căn hộ - GALAXY 9</a>
+                                </div>
+                                    <a href="#"><img src="img/gallery/galaxy9_044.jpg" class="img-fluid"></a>
+
+                                <div class="px-3 border border-top-0 rounded-bottom py-3">
+                                    <h2 class=" fw-bold">1 TỶ 650 TRIỆU</h2>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <span>Vị trí: Quận 4, TP Hồ Chí Minh</span>
+                                        </li>
+                                        <li>
+                                            <span>Loại hình: Căn hộ cao cấp</span>
+                                        </li>
+                                        <li>
+                                            <span>Số phòng ngủ: 1</span>
+                                        </li>
+                                        <li>
+                                            <span>Diện tích: 48,8 m<sup>2</sup></span>
+                                        </li>
+                                        <li>
+                                            <span>Mã: A107051205a</span>
+                                        </li>
+                                    </ul>
+                                    <a class="btn btn--red">Xem Thêm <i class="fa fa-angle-right ml-1"></i></a>
+                                </div>
+                                <img src="img/icons/logo-galaxy-9.jpg" class="product__item__logo img-fluid d-sm-none d-md-block">
+                                
+                            </div>
+                        </div>
+                        <!--PRODUCT-->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="product__item border-0">
+                                <div class="product__item__header product__item__header-galaxy py-1 text-center rounded-top">
+                                    <a href="#" class="fw-bold text-white">Căn hộ - GALAXY 9</a>
+                                </div>
+                                    <a href="#"><img src="img/gallery/galaxy9_044.jpg" class="img-fluid"></a>
+
+                                <div class="px-3 border border-top-0 rounded-bottom py-3">
+                                    <h2 class=" fw-bold">1 TỶ 650 TRIỆU</h2>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <span>Vị trí: Quận 4, TP Hồ Chí Minh</span>
+                                        </li>
+                                        <li>
+                                            <span>Loại hình: Căn hộ cao cấp</span>
+                                        </li>
+                                        <li>
+                                            <span>Số phòng ngủ: 1</span>
+                                        </li>
+                                        <li>
+                                            <span>Diện tích: 48,8 m<sup>2</sup></span>
+                                        </li>
+                                        <li>
+                                            <span>Mã: A107051205a</span>
+                                        </li>
+                                    </ul>
+                                    <a class="btn btn--red">Xem Thêm <i class="fa fa-angle-right ml-1"></i></a>
+                                </div>
+                                <img src="img/icons/logo-galaxy-9.jpg" class="product__item__logo img-fluid d-sm-none d-md-block">
+                                
+                            </div>
+                        </div>
+                        <!--PRODUCT-->
+                        </div>
+                        <div class="row mt-4">
+                             <div class="col-12 ">
+                            <nav class="product-pagination">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a href="#" class="page-link"><i class="fa fa-angle-double-left"></i></a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a href="#" class="page-link"><i class="fa fa-angle-left"></i></a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="#" class="page-link">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link"><i class="fa fa-angle-right"></i></a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        </div>
+                        <!--End Product sm screen-->
+                    </div>
+                    <div class="col-xl-3 animated wow fadeInRight">
+                        <div class="form-contact-list px-3 pb-3 pt-1 d-none d-xl-block px-0">
+                            <h1 class="fw-bold m-0 py-2">Liên hệ sàn giao dịch</h1>
+                            <p class="form-contact-list__phone fw-bold m-0">
+                                <i class="fa fa-mobile mr-1"></i>
+                                0997 79 79 79
+                            </p>
+                            <p class="form-contact-list__mail fw-bold m-0 py-2 mb-2">
+                                <i class="fa fa-envelope-o mr-1"></i>
+                                novalandagent@novaland.com.vn
+                            </p>
+                            <form action="">
+                                <input type="text" name="name" class="form-control" placeholder="Tên (*)">
+                                <input type="email" name="name" class="form-control" placeholder="Email">
+                                <input type="text" name="name" class="form-control" placeholder="Điện thoại (*)">
+                                <textarea type="text" name="name" class="form-control" placeholder="Nội dung"></textarea>
+                                <button type="submit" class="btn btn--red btn-block">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+           </div>
+           <!--Product row-->
+                       
+       </div>
+   </section>
+    <!--END TRANSFER CONTENT-->
+    
+    <!--BEGIN TRANSFER FORM-->
+    <section id="transfer-form">
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-lg-4 contact-detail">
+                    <h1 class="display-4 mb-3">Liên hệ sàn giao dịch</h1>
+                    <p class=" fw-bold mb-1">Hotline: <span>0997 79 79 79</span></p>
+                    <p class="">Email: novalandagent@novaland.com.vn</p>
+                </div>
+                <div class="col-lg-8 contact-form">
+                    <h1 class="mb-3">Form đăng kí sàn giao dịch</h1>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" name="name"  class="form-control fs-1" placeholder="Tên (*)">
+                            <input type="email" name="name"  class="form-control fs-1" placeholder="Email">
+                            <input type="text" name="name"  class="form-control fs-1" placeholder="Tên (*)">
+                        </div>
+                        <div class="col-lg-6">
+                            <textarea name="" id=""  placeholder="Nội dung" class="form-control fs-1 mb-2"></textarea>
+                        </div>
+                        <div class="col-12 text-center text-md-right">
+                            <button class="btn btn--red px-4">Gửi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END TRANSFER FORM-->
+    
+   <!--BEGIN FOOTER-->
+    <footer id="footer" class="footer">
+        <div class="container-fluid footer__content pt-1 pt-md-5">
+            <!--ROW 1-->
+            <div class="row">
+                <div class="col-md-6 col-lg-2 footer__content__detail">
+                    <h1 class="d-none d-md-block">Giới thiệu</h1>
+                    <h1 class="footer-xs-btn footer-intro d-flex justify-content-between align-items-center py-4 py-md-0 px-2 px-md-0 mb-1 d-md-none ">
+                        Giới thiệu
+                        <i class="fa fa-plus"></i>
+                    </h1>
+                    <ul class="list-unstyled" id="footer-intro-content">
+                        <li>
+                            <a href="#">Sơ lược về công ty</a>
+                        </li>
+                        <li>
+                            <a href="#">Tầm nhìn và sứ mệnh</a>
+                        </li>
+                        <li>
+                            <a href="#">Giá trị cốt lõi</a>
+                        </li>
+                        <li>
+                            <a href="#">Lịch sử phát triển</a>
+                        </li>
+                        <li>
+                            <a href="#">Ban lãnh đạo</a>
+                        </li>
+                        <li>
+                            <a href="#">Đối tác</a>
+                        </li>
+                        <li>
+                            <a href="#">Giải thưởng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 footer__content__detail">
+                    <h1 class="d-none d-md-block">Dự án</h1>
+                    <h1 class="footer-xs-btn footer-project d-flex justify-content-between align-items-center py-4 py-md-0 px-2 px-md-0 mb-1 d-md-none ">
+                        Dự án
+                        <i class="fa fa-plus"></i>
+                    </h1>
+                    <div id="footer-project-content">
+                        <div class="d-flex">
+                            <ul class="list-unstyled mr-5">
+                                <li>
+                                    <a href="#">Sunrise City</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tropic Garden</a>
+                                </li>
+                                <li>
+                                    <a href="#">Icon 56</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lucky Dragon</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lucky Palace</a>
+                                </li>
+                                <li>
+                                    <a href="#">The Botanica</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gardengate</a>
+                                </li>
+                                <li>
+                                    <a href="#">The Sun Avenue</a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">The Prince Residence</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lexington Residence</a>
+                                </li>
+                                <li>
+                                    <a href="#">Galaxy 9</a>
+                                </li>
+                                <li>
+                                    <a href="#">Golf Park</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rivergate</a>
+                                </li>
+                                <li>
+                                    <a href="#">Orchard Garden</a>
+                                </li>
+                                <li>
+                                    <a href="#">The Tresor</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 footer__content__social">
+                    <h1 class="footer-xs-btn footer-contact d-flex justify-content-between align-items-center py-4 py-md-0 px-2 px-md-0 mb-1 d-md-none ">
+                        Liên kết với chúng tôi
+                        <i class="fa fa-plus"></i>
+                    </h1>
+                    <div  id="footer-contact-content" >
+                        <div class="d-block d-md-flex justify-content-between d-lg-block">
+                            <div>
+                                <h1 class="d-none d-md-block">Liên kết với chúng tôi</h1>
+                                <i class="fa fa-facebook footer-fb"></i>
+                                <i class="fa fa-google-plus footer-gg"></i>
+                                <i class="fa fa-twitter footer-tw"></i>
+                                <i class="fa fa-linkedin footer-in"></i>
+                            </div>
+                            <div>
+                                <h1 class="mt-3 mt-md-0 mt-lg-3">Đăng ký chương trình bán hàng</h1>
+                                <div class="form-sign-up">
+                                    <div class="input-group">
+                                        <input type="email" name="" placeholder="Địa chỉ email..">
+                                        <div class="input-group-append">
+                                            <button class="btn btn--green">Đăng ký</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END ROW 1-->
+            <!--ROW 2-->
+            <div class="row mt-3">
+                <div class="col-md-3 footer__content-copyright text-center mb-md-0 ">
+                    <a href="#">
+                        <img src="img/icons/logo-novaagent.png" class="img-fluid mt-3">
+                    </a>
+                </div>
+                <div class="col-md-9 footer__content-copyright py-4">
+                    <span>Công ty TNHH Một thành viên Novaland Agent.</span>
+                    <p class="mt-3 mb-0">
+                        65 Nguyễn Du, phường Bến Nghé, Quận 1, TP. Hồ Chí Minh - ĐT: (08) 391 53 666 - Fax: (08) 377 52 999 © 2015.<br>
+                        Bản quyền thuộc về Công ty Novaland Agent. Tất cả các quyền được bảo hộ.
+                    </p>
+                </div>
+            </div>
+            <!--END ROW 2-->
+        </div>
+    </footer>
+    <!--END FOOTER-->
+    <section id="arrow" class="d-inline">
+        <i class="fa fa-angle-double-up"></i>
+    </section>
+    
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper-1.14.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    
+</body>
+</html>
